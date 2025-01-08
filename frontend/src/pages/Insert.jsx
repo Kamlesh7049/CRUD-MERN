@@ -22,7 +22,7 @@ const Insert = () => {
   const handleSubmit = (e) => {
     e.preventDefault();  // Prevents the default form submit behavior
 
-    let api = "http://localhost:8000/employees/employeesave";
+    let api = "https://crud-mern-56v5.onrender.com/employees/employeesave";
     axios.post(api, input).then((res) => {
       console.log(res);
       console.log("Data successfully saved!");

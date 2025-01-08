@@ -5,7 +5,7 @@ import Table from 'react-bootstrap/Table';
 const Display=()=>{
   const[mydata,setMydata]=useState([]);
   const loadData=async()=>{
-    let api = "http://localhost:8000/employees/employeedisplay";
+    let api = "https://crud-mern-56v5.onrender.com/employees/employeedisplay";
     try{
       const response=await axios.get(api);
       setMydata(response.data);

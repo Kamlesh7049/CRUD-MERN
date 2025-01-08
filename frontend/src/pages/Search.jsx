@@ -9,7 +9,7 @@ const Search=()=>{
     const [mydata,setMydata]=useState([]);
     // const [emptdata, setEptdata]=useState("")
     const handleSubmit=()=>{
-        let api = "http://localhost:8000/employees/employeesearch";
+        let api = "https://crud-mern-56v5.onrender.com/employees/employeesearch";
         axios.post(api,{empno:empno}).then((res)=>{
             setMydata(res.data);
             // setEptdata("")

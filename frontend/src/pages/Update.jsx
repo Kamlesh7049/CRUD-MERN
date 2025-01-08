@@ -12,7 +12,7 @@ const Update = () => {
 
  const navigate=useNavigate();
   const loadData = () => {
-    let api = "http://localhost:8000/employees/employeeupdatedisplay";
+    let api = "https://crud-mern-56v5.onrender.com/employees/employeeupdatedisplay";
     axios.get(api).then((res) => {
       console.log(res.data);
       setMydata(res.data);
@@ -25,7 +25,7 @@ const Update = () => {
 
   
 const myrecDel=(id)=>{
-  let api = "http://localhost:8000/employees/employeedatadelete";
+  let api = "https://crud-mern-56v5.onrender.com/employees/employeedatadelete";
   axios.post(api,{id:id}).then((res)=>{
     alert("Data Deleted!!!")
     loadData();
